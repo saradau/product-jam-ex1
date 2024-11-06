@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link href="/styles/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header role="banner">
-      <h1>Welcome to my Website!</h1>
-    </header>
-    <main>
-      <p>This is a paragraph.</p>
-      <a href="/elements.html">Elements Page</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="/styles/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="home-container main-page">
+  <header role="banner">
+    <h1>My Portfolio</h1>
+    <nav role="navigation" class="flex-nav">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="cv.html">My CV</a> 
+    </nav>
 
-      <div class="counter">
-        <h2>Counter</h2>
-        <button id="increment" class="counter-button">+</button>
-        <button id="decrement" class="counter-button">−</button>
-        <span id="count">0</span>
+    <div class="contact-links">
+      <a href="mailto:sara.dauksz.sd@gmail.com" class="contact-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/saradau" class="contact-link" target="_blank">
+        <i class="fab fa-github"></i> 
+      </a>
+      <a href="https://linkedin.com/in/your-linkedin-profile" class="contact-link" target="_blank">
+        <i class="fab fa-linkedin"></i> 
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-container">
+    <section class="main-section">
+      <h2>Hello, I'm Sara Dauksz!</h2>
+      <div class="image-center">
+        <img id="profile-pic" src="/profilepic.jpeg" alt="Sara Dauksz's photo" class="profile-pic" />
       </div>
-    </main>
+      <p class="tracking-wide">
+        I'm currently a Computer Science student at the Hebrew University with a passion for creating elegant, user-friendly applications and web experiences.<br>
+        I love solving problems and am always eager to learn new things. Explore my work and learn more about me below.
+      </p>
+      <a href="about.html" class="button">Learn More</a> <!--TODO: add button <button></button> -->
+    </section>
+  </main>
 
-    <script type="module" src="/main.js"></script>
+  <footer class="footer">
+    <p>&copy; Sara Dauksz - 2024. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+
   </body>
 </html>
