@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// JavaScript to animate the bubbles on the home screen
 document.addEventListener("DOMContentLoaded", () => {
   // Check if the current page is the main page
   if (document.body.classList.contains("main-page")) {
